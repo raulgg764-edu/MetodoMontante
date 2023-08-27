@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fractions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -87,7 +88,7 @@ namespace MetodoMontante
             int rows = dataGridView1.Rows.Count;
             int cols = dataGridView1.Columns.Count-1;
 
-            double[] finalResults = new double[rows];
+            Fraction[] finalResults = new Fraction[rows];
             int pivAnt = 1;
 
             int[,] adjunctNumbers = numbers;
@@ -137,7 +138,7 @@ namespace MetodoMontante
                 
                 for(int j = 0; j < cols; j++)
                 {
-                    finalResults[i] = finalResults[i] + (results[j] * ((double)adjunct[i, j] / (double)pivAnt));
+                    finalResults[i] = finalResults[i] + (results[j] * ((Fraction)adjunct[i, j] / (Fraction)pivAnt));
                     Console.Write(adjunct[i, j]+" ");
                 }
                 Console.WriteLine();
@@ -145,7 +146,7 @@ namespace MetodoMontante
                 Console.WriteLine("piv:" + pivAnt);
             }
 
-            double[,] inverse = Inverse(adjunct, pivAnt);
+            Fraction[,] inverse = Inverse(adjunct, pivAnt);
             ShowResults(finalResults, inverse,adjunct, pivAnt);
         }
         
@@ -166,24 +167,24 @@ namespace MetodoMontante
             return identity;
         }
 
-        private double[,] Inverse(int [,] matrix,int piv)
+        private Fraction[,] Inverse(int [,] matrix,int piv)
         {
             int rows = dataGridView1.Rows.Count;
             int cols = dataGridView1.Columns.Count - 1;
 
-            double[,] inverse = new double[rows, cols];
+            Fraction[,] inverse = new Fraction[rows, cols];
 
             for (int i = 0; i < rows; i++)
             {
                 for(int j = 0; j < cols; j++)
                 {
-                    inverse[i,j] = (double)matrix[i,j] / (double)piv;
+                    inverse[i, j] = (Fraction)((Fraction)matrix[i, j] / (Fraction)piv);
                 }
             }
             return inverse;
         }
 
-        private void ShowResults(double[] results, double[,] inverse, int [,]adjunct, int piv)
+        private void ShowResults(Fraction[] results, Fraction[,] inverse, int [,]adjunct, int piv)
         {
             DataGridView inverseTable = dataGridViewInverse;
             DataGridView resultsTable = dataGridViewValues;
@@ -258,10 +259,14 @@ namespace MetodoMontante
 
         private void dataGridView1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '-'))
             {
                 e.Handled = true;
                 System.Media.SystemSounds.Exclamation.Play();
+            }//un simobolo negativo
+            if ((e.KeyChar == '-') && ((sender as TextBox).Text.IndexOf('-') > -1))
+            {
+                e.Handled = true;
             }
         }
 
