@@ -75,11 +75,16 @@ namespace MetodoMontante
                 }
                 MontanteAlgorithm(numbers, results);
             }
+            catch (DivideByZeroException)
+            {
+                MessageBox.Show("La matriz no tiene solución por division entre cero", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
             catch
             {
                MessageBox.Show("La matriz tiene un espacio vacio o tiene un carácter no valido","¡Error!",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 
             }
+            
            
         }
 
