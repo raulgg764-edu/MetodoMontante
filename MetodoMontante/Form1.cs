@@ -81,7 +81,7 @@ namespace MetodoMontante
             }
             catch
             {
-               MessageBox.Show("La matriz tiene un espacio vacio o tiene un carácter no valido","¡Error!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+               MessageBox.Show("La matriz tiene un espacio vacío o tiene un carácter no válido","¡Error!",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 
             }
             
@@ -308,7 +308,7 @@ namespace MetodoMontante
                 {
                     for (int j = 0; j < cols; j++)
                     {
-                        dataGridView1.Rows[i].Cells[i].Value = "";
+                        dataGridView1.Rows[i].Cells[j].Value = "";
                     }
                 }
             }

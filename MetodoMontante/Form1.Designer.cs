@@ -30,37 +30,37 @@ namespace MetodoMontante
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.nupNumEcuaciones = new System.Windows.Forms.NumericUpDown();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnNumEcuaciones = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
             this.btnResults = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblDeterm = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridViewAdjunct = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewInverse = new System.Windows.Forms.DataGridView();
             this.dataGridViewValues = new System.Windows.Forms.DataGridView();
-            this.nupNumEcuaciones = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dataGridViewAdjunct = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblDeterm = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupNumEcuaciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdjunct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInverse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewValues)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupNumEcuaciones)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdjunct)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -76,6 +76,24 @@ namespace MetodoMontante
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ecuaciones";
             // 
+            // nupNumEcuaciones
+            // 
+            this.nupNumEcuaciones.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nupNumEcuaciones.Location = new System.Drawing.Point(184, 31);
+            this.nupNumEcuaciones.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nupNumEcuaciones.Name = "nupNumEcuaciones";
+            this.nupNumEcuaciones.Size = new System.Drawing.Size(47, 25);
+            this.nupNumEcuaciones.TabIndex = 7;
+            this.nupNumEcuaciones.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -86,23 +104,23 @@ namespace MetodoMontante
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(10, 79);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
@@ -148,6 +166,21 @@ namespace MetodoMontante
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Funciones";
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Black;
+            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(379, 29);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(168, 27);
+            this.btnClear.TabIndex = 6;
+            this.btnClear.Text = "Limpiar matriz";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // btnResults
             // 
             this.btnResults.BackColor = System.Drawing.Color.Black;
@@ -181,6 +214,62 @@ namespace MetodoMontante
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resultados";
             // 
+            // lblDeterm
+            // 
+            this.lblDeterm.AutoSize = true;
+            this.lblDeterm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeterm.Location = new System.Drawing.Point(562, 264);
+            this.lblDeterm.Name = "lblDeterm";
+            this.lblDeterm.Size = new System.Drawing.Size(0, 21);
+            this.lblDeterm.TabIndex = 12;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(498, 264);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 21);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Δ Det. :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(316, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 21);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Matriz Adjunta";
+            // 
+            // dataGridViewAdjunct
+            // 
+            this.dataGridViewAdjunct.AllowUserToAddRows = false;
+            this.dataGridViewAdjunct.AllowUserToDeleteRows = false;
+            this.dataGridViewAdjunct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewAdjunct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataGridViewAdjunct.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewAdjunct.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridViewAdjunct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewAdjunct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewAdjunct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAdjunct.ColumnHeadersVisible = false;
+            this.dataGridViewAdjunct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
+            this.dataGridViewAdjunct.Location = new System.Drawing.Point(252, 45);
+            this.dataGridViewAdjunct.Name = "dataGridViewAdjunct";
+            this.dataGridViewAdjunct.ReadOnly = true;
+            this.dataGridViewAdjunct.RowHeadersVisible = false;
+            this.dataGridViewAdjunct.Size = new System.Drawing.Size(240, 240);
+            this.dataGridViewAdjunct.TabIndex = 10;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -211,14 +300,14 @@ namespace MetodoMontante
             this.dataGridViewInverse.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewInverse.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewInverse.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewInverse.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewInverse.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewInverse.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewInverse.ColumnHeadersVisible = false;
             this.dataGridViewInverse.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
@@ -238,14 +327,14 @@ namespace MetodoMontante
             this.dataGridViewValues.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewValues.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridViewValues.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewValues.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewValues.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewValues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewValues.Location = new System.Drawing.Point(498, 45);
             this.dataGridViewValues.Name = "dataGridViewValues";
@@ -253,95 +342,6 @@ namespace MetodoMontante
             this.dataGridViewValues.RowHeadersVisible = false;
             this.dataGridViewValues.Size = new System.Drawing.Size(133, 201);
             this.dataGridViewValues.TabIndex = 6;
-            // 
-            // nupNumEcuaciones
-            // 
-            this.nupNumEcuaciones.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupNumEcuaciones.Location = new System.Drawing.Point(184, 31);
-            this.nupNumEcuaciones.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.nupNumEcuaciones.Name = "nupNumEcuaciones";
-            this.nupNumEcuaciones.Size = new System.Drawing.Size(47, 25);
-            this.nupNumEcuaciones.TabIndex = 7;
-            this.nupNumEcuaciones.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(316, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 21);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Matriz Adjunta";
-            // 
-            // dataGridViewAdjunct
-            // 
-            this.dataGridViewAdjunct.AllowUserToAddRows = false;
-            this.dataGridViewAdjunct.AllowUserToDeleteRows = false;
-            this.dataGridViewAdjunct.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewAdjunct.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dataGridViewAdjunct.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridViewAdjunct.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridViewAdjunct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewAdjunct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewAdjunct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAdjunct.ColumnHeadersVisible = false;
-            this.dataGridViewAdjunct.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dataGridViewAdjunct.Location = new System.Drawing.Point(252, 45);
-            this.dataGridViewAdjunct.Name = "dataGridViewAdjunct";
-            this.dataGridViewAdjunct.ReadOnly = true;
-            this.dataGridViewAdjunct.RowHeadersVisible = false;
-            this.dataGridViewAdjunct.Size = new System.Drawing.Size(240, 240);
-            this.dataGridViewAdjunct.TabIndex = 10;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(498, 264);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 21);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Δ Det. :";
-            // 
-            // lblDeterm
-            // 
-            this.lblDeterm.AutoSize = true;
-            this.lblDeterm.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeterm.Location = new System.Drawing.Point(562, 264);
-            this.lblDeterm.Name = "lblDeterm";
-            this.lblDeterm.Size = new System.Drawing.Size(0, 21);
-            this.lblDeterm.TabIndex = 12;
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Black;
-            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(379, 29);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(168, 27);
-            this.btnClear.TabIndex = 6;
-            this.btnClear.Text = "Limpiar matriz";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // Form1
             // 
@@ -355,19 +355,18 @@ namespace MetodoMontante
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Método Montante";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupNumEcuaciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdjunct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewInverse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewValues)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupNumEcuaciones)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAdjunct)).EndInit();
             this.ResumeLayout(false);
 
         }
